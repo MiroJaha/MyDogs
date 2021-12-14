@@ -72,6 +72,13 @@ class ImageCollectionViewController: UICollectionViewController {
 
 //MARK: Extension My Protocol to Save the New Data
 extension ImageCollectionViewController: ControlDogsDelegate {
+    func deletingDog(dogList: DogList) {
+        context.delete(dogList)
+        //Saving Changes and Fetching the Data Again From Database
+        save()
+        fetchingAllDogs()
+    }
+    
     func savingDog(name: String, color: String, treat: String, photo: Data, indexPath: NSIndexPath?) {
         if let ip = indexPath?.row {
             list[ip].name = name
@@ -86,6 +93,7 @@ extension ImageCollectionViewController: ControlDogsDelegate {
             newItem.treat = treat
             newItem.photo = photo
         }
+        //Saving Changes and Fetching the Data Again From Database
         save()
         fetchingAllDogs()
     }
