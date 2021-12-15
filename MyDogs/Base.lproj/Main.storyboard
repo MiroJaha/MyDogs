@@ -9,14 +9,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Image Collection View Controller-->
+        <!--Dogs-->
         <scene sceneID="K3z-qD-b9I">
             <objects>
                 <collectionViewController id="tjG-uJ-J4l" customClass="ImageCollectionViewController" customModule="MyDogs" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="unf-vK-PDq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yoY-a8-YRU">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -69,7 +69,7 @@
                             <outlet property="delegate" destination="tjG-uJ-J4l" id="RBK-br-YzA"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="lUV-8e-bUW">
+                    <navigationItem key="navigationItem" title="Dogs" id="lUV-8e-bUW">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="bX0-Je-PcK">
                             <connections>
                                 <segue destination="fFH-XT-i0d" kind="show" identifier="AddDogSegue" id="a89-RN-pHe"/>
@@ -84,7 +84,7 @@
             </objects>
             <point key="canvasLocation" x="185.50724637681162" y="109.82142857142857"/>
         </scene>
-        <!--Edit Dog View Controller-->
+        <!--Edit Dog-->
         <scene sceneID="mWv-wQ-bWG">
             <objects>
                 <viewController id="XL6-9X-HhW" customClass="EditDogViewController" customModule="MyDogs" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,7 +113,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="cEZ-E5-dQT" secondAttribute="bottom" id="EUJ-iQ-weg"/>
                                     <constraint firstItem="cEZ-E5-dQT" firstAttribute="leading" secondItem="nkE-3V-6n1" secondAttribute="leading" id="KIN-LE-Sa9"/>
@@ -127,6 +127,7 @@
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog Name" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ocJ-cP-T5i">
                                 <rect key="frame" x="10" y="106" width="394" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="9Kq-VS-uc5"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="x2q-t4-NQo"/>
@@ -136,6 +137,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog Favorite Treat" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HS0-5H-BOk">
                                 <rect key="frame" x="10" y="246" width="394" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GPy-7D-DmA"/>
                                 </constraints>
@@ -144,6 +146,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog Color" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EJW-pX-LMr">
                                 <rect key="frame" x="10" y="176" width="394" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="lX3-sc-LGe"/>
                                 </constraints>
@@ -168,7 +171,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YRV-Oi-jzD"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HS0-5H-BOk" firstAttribute="leading" secondItem="YRV-Oi-jzD" secondAttribute="leading" constant="10" id="771-s2-bDD"/>
                             <constraint firstItem="CBW-xg-B9Q" firstAttribute="top" secondItem="nkE-3V-6n1" secondAttribute="bottom" constant="50" id="B4h-8S-gAE"/>
@@ -187,7 +190,7 @@
                             <constraint firstItem="ocJ-cP-T5i" firstAttribute="top" secondItem="YRV-Oi-jzD" secondAttribute="top" constant="50" id="vb7-bK-oaD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qiV-bR-M70">
+                    <navigationItem key="navigationItem" title="Edit Dog" id="qiV-bR-M70">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="QpL-Nz-Qb1">
                             <connections>
                                 <action selector="cancelButton:" destination="XL6-9X-HhW" id="psi-Jg-hZB"/>
@@ -212,7 +215,7 @@
             </objects>
             <point key="canvasLocation" x="1095.6521739130435" y="822.99107142857144"/>
         </scene>
-        <!--Add New View Controller-->
+        <!--Add Dog-->
         <scene sceneID="pG4-AG-Pru">
             <objects>
                 <viewController id="fFH-XT-i0d" customClass="AddNewViewController" customModule="MyDogs" customModuleProvider="target" sceneMemberID="viewController">
@@ -241,7 +244,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="LJc-Vg-Goe" firstAttribute="leading" secondItem="rM3-7h-jh2" secondAttribute="leading" id="55h-w4-hzI"/>
                                     <constraint firstAttribute="bottom" secondItem="UaE-jf-DrG" secondAttribute="bottom" id="5he-6G-iM5"/>
@@ -271,6 +274,7 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog Name" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cYH-YL-pO9">
                                 <rect key="frame" x="10" y="138" width="394" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dVw-gA-lX8"/>
                                 </constraints>
@@ -279,6 +283,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog Favorite Treat" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dZa-mO-Gnt">
                                 <rect key="frame" x="10" y="278" width="394" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="R1F-vj-PCY"/>
                                 </constraints>
@@ -287,6 +292,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dog Color" minimumFontSize="14" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-Qa-h3v">
                                 <rect key="frame" x="10" y="208" width="394" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZGR-68-z8Z"/>
                                 </constraints>
@@ -295,7 +301,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jvs-g3-bO7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NIo-Qa-h3v" firstAttribute="leading" secondItem="jvs-g3-bO7" secondAttribute="leading" constant="10" id="6LJ-Lv-3e3"/>
                             <constraint firstItem="jvs-g3-bO7" firstAttribute="trailing" secondItem="cYH-YL-pO9" secondAttribute="trailing" constant="10" id="6VA-9a-DSY"/>
@@ -314,7 +320,7 @@
                             <constraint firstItem="jvs-g3-bO7" firstAttribute="trailing" secondItem="dZa-mO-Gnt" secondAttribute="trailing" constant="10" id="qFR-QR-2fo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qfi-nW-gCV"/>
+                    <navigationItem key="navigationItem" title="Add Dog" id="qfi-nW-gCV"/>
                     <connections>
                         <outlet property="addImageButton" destination="UaE-jf-DrG" id="amM-He-tLN"/>
                         <outlet property="dogColorTextField" destination="NIo-Qa-h3v" id="mff-DN-b9k"/>
@@ -368,9 +374,6 @@
     <resources>
         <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

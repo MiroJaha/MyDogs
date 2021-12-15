@@ -86,20 +86,21 @@ class AddNewViewController: UIViewController {
     func designView() {
         dogNameTextField.layer.borderWidth = 2
         dogNameTextField.layer.borderColor = UIColor.black.cgColor
+        dogNameTextField.layer.backgroundColor = UIColor.white.cgColor
         dogNameTextField.layer.cornerRadius = 20
         dogColorTextField.layer.borderWidth = 2
         dogColorTextField.layer.borderColor = UIColor.black.cgColor
+        dogColorTextField.layer.backgroundColor = UIColor.white.cgColor
         dogColorTextField.layer.cornerRadius = 20
         dogTreatTextField.layer.borderWidth = 2
         dogTreatTextField.layer.borderColor = UIColor.black.cgColor
+        dogTreatTextField.layer.backgroundColor = UIColor.white.cgColor
         dogTreatTextField.layer.cornerRadius = 20
         saveDogButton.layer.borderWidth = 2
         saveDogButton.layer.borderColor = UIColor.orange.cgColor
         saveDogButton.layer.cornerRadius = 25
         addImageButton.titleLabel?.shadowOffset = CGSize(width: 2, height: 2)
         addImageButton.titleLabel?.shadowColor = .white
-        dogImageView.layer.borderWidth = 2
-        dogImageView.layer.borderColor = UIColor.brown.cgColor
     }
 }
 
